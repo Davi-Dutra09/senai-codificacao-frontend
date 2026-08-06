@@ -93,60 +93,70 @@
 </section>
 
 
-
 <section id="video">
 
     <h2>Vídeo</h2>
 
     <video controls width="600" preload="metadata">
-
         <source src="midia/video.mp4" type="video/mp4">
-
         Seu navegador não suporta a reprodução de vídeos.
-
     </video>
-
 
     <h3>Depoimento em Áudio</h3>
 
     <audio controls>
-
         <source src="midia/audio.mp3" type="audio/mpeg">
-
         Seu navegador não suporta a reprodução de áudio.
-
     </audio>
 
-</section>
+    <h3>Vídeo do YouTube</h3>
 
+    <iframe
+        width="600"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Vídeo do YouTube"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+</section>
 
 
 <section id="contato">
 
     <h2>Contato</h2>
 
-    <p>Email: contato@miniloja.com</p>
+    <form>
 
-    <p>Telefone: (51) 99999-9999</p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
 
 </section>
-
-
 
 <section id="local">
 
     <h2>Onde estamos</h2>
 
-    <p>Rua Principal, 123 - Centro</p>
-
-    <iframe 
-        src="https://www.google.com/maps"
+    <iframe
+        src="https://www.google.com/maps?q=SENAI+Canoas&output=embed"
         width="600"
-        height="300">
+        height="300"
+        title="Mapa do SENAI Canoas"
+        loading="lazy">
     </iframe>
 
 </section>
-
 
 
 </body>
