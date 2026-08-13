@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+p {
+    color: gray;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+.destaque {
+    background-color: pink;
+    font-weight: bold;
+     text-align: center;
+}
+#topo {
+    background-color: darkblue;
+    color: white;
+}
+.caixa {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 15px;
+}
