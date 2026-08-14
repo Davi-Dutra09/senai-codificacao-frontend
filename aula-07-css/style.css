@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body>img {
+    width: 180px;
+    margin-top: 30px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+main section {
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #d94f87;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+main section h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+main section p {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+}
+
+main section label {
+    color: #ffffff;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+main section input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    outline: none;
+}
+
+main section button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff77a8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main section form a {
+    margin-top: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+main section form a:hover {
+    text-decoration: underline;
+}
+
+.decoracao {
+    position: fixed;
+    background-color: #ffd1e1;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+.decoracao-1 {
+    width: 180px;
+    height: 180px;
+    top: 40px;
+    left: -60px;
+}
+
+.decoracao-2 {
+    width: 120px;
+    height: 120px;
+    top: 100px;
+    right: -35px;
+}
+
+.decoracao-3 {
+    width: 220px;
+    height: 220px;
+    bottom: -100px;
+    left: 40px;
+}
+
+.decoracao-4 {
+    width: 70px;
+    height: 70px;
+    top: 35%;
+    left: 8%;
+    background-color: #ff9fc4;
+}
+
+.decoracao-5 {
+    width: 45px;
+    height: 45px;
+    top: 55%;
+    right: 10%;
+    background-color: #f783b0;
+}
+
+.decoracao-6 {
+    width: 90px;
+    height: 90px;
+    bottom: 15%;
+    right: 5%;
+    background-color: #ffc1d8;
+}
+
+.decoracao-7 {
+    width: 35px;
+    height: 35px;
+    top: 70%;
+    left: 18%;
+    background-color: #e85b92;
+}
+
+#tela-produtos {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+
+.topo-produtos button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d94f87;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.topo-produtos button:hover {
+    background-color: #e85b92;
+    transform: scale(1.05);
+}
+
+.campo-pesquisa {
+    flex: 1;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #f3a1bd;
+    border-radius: 25px;
+    padding: 0 15px;
+}
+
+.campo-pesquisa input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.lupa {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.produto {
+    width: 220px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.produto h2 {
+    margin: 12px 0 5px;
+    color: #d94f87;
+    font-size: 20px;
+}
+
+.produto p {
+    margin: 0 0 15px;
+    color: #555555;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.produto button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: #d94f87;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.produto {
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+#tela-produtos > h1 {
+    color: #d94f87;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.botao-carrinho {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d94f87;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lista-carrinho {
+    margin-top: 25px;
+}
+
+.item-carrinho {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-carrinho img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.info-carrinho {
+    flex: 1;
+}
+
+.info-carrinho h2 {
+    margin: 0 0 5px;
+    color: #d94f87;
+    font-size: 18px;
+}
+
+.info-carrinho p {
+    margin: 0;
+    color: #555555;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f3a1bd;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.total-carrinho {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff0f5;
+    border-radius: 15px;
+}
+
+.total-carrinho p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.total-carrinho strong {
+    font-size: 22px;
+    color: #d94f87;
+}
+
+.finalizar-pedido {
+    width: 100%;
+    max-width: 700px;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d94f87;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.voltar-produtos {
+    border: none;
+    background: none;
+    color: #d94f87;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}

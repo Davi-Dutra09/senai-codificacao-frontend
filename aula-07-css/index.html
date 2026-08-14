@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina Dafeni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="img/logo.png" alt="Logo da Cantina Escolar">
+
+    <div class="decoracao decoracao-1"></div>
+    <div class="decoracao decoracao-2"></div>
+    <div class="decoracao decoracao-3"></div>
+    <div class="decoracao decoracao-4"></div>
+    <div class="decoracao decoracao-5"></div>
+    <div class="decoracao decoracao-6"></div>
+    <div class="decoracao decoracao-7"></div>
+
+    <main>
+        <section>
+
+            <h1>Entrar</h1>
+            <p>Entre com sua matrícula e senha</p>
+
+            <form>
+
+                <label for="matricula">Matrícula</label>
+                <input type="text" id="matricula" name="matricula">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
+
+                <button type="submit">Entrar</button>
+
+                <a href="#">Esqueci minha senha</a>
+
+            </form>
+
+        </section>
+    </main>
+    <section id="tela-produtos">
+        <div class="topo-produtos">
+            <div class="campo-pesquisa">
+
+                <span class="lupa">🔎</span>
+
+                <input type="search" placeholder="Pesquisar produto...">
+
+            </div>
+
+            <button type="button">?</button>
+
+        </div>
+
+        <h1>Produtos</h1>
+
+        <div class="lista-produtos">
+            <div class="produto">
+
+                <img src="img/pastel.jpg" alt="Pastel">
+
+
+                <h2>Pastel</h2>
+
+                <p>R$ 5,00</p>
+
+                <button type="button">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="img/bolo.jpg" alt="Bolo">
+
+                <h2>Bolo</h2>
+
+                <p>R$ 5,00</p>
+
+                <button type="button">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="img/suco.jpg" alt="Suco">
+
+                <h2>Suco</h2>
+
+                <p>R$ 4,00</p>
+
+                <button type="button">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="img/coxinha.jpg" alt="Coxinha">
+
+                <h2>Coxinha</h2>
+
+                <p>R$ 3,00</p>
+
+                <button type="button">Adicionar</button>
+
+            </div>
+        </div>
+
+        <button class="botao-carrinho" type="button">
+            🛒
+        </button>
+
+    </section>
+
+
+    <section id="tela-carrinho">
+
+        <button class="voltar-produtos" type="button">
+    ← Voltar aos produtos
+</button>
+
+        <h1>Meu Carrinho</h1>
+
+        <div class="lista-carrinho">
+
+            <div class="item-carrinho">
+
+                <img src="img/bolo.jpg" alt="Bolo">
+
+                <div class="info-carrinho">
+
+                    <h2>Bolo</h2>
+
+                    <p>R$ 5,00</p>
+
+                </div>
+
+                <div class="quantidade">
+
+                    <button type="button">−</button>
+
+                    <span>1</span>
+
+                    <button type="button">+</button>
+
+                </div>
+
+            </div>
+
+            <div class="total-carrinho">
+
+                <p>Total</p>
+
+                <strong>R$ 5,00</strong>
+
+            </div>
+
+        </div>
+
+        <button class="finalizar-pedido" type="button">
+    Finalizar pedido
+</button>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
