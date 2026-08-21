@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 201, 223);
+    color: rgb(255, 66, 173);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.navbar {
+    background-color: rgb(224, 98, 255);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.botaobotao-menu {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #b32fff;
+    color: #F5F7FF;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    min-height: 420px;
+    align-items: center;
+    background-color: rgb(251, 182, 206);
+}
+
+.hero-conteudo {
+    text-align: center;
+    max-width: 700px;
+}
+
+.hero-acoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao {
+    background-color: #ff87d3;
+    text-decoration: none;
+
+}
+
+.botao-secundario {
+    background-color: #fd21bb;
+    text-decoration: none;
+
+}
+
+.grade-jogos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-jogo {
+    flex: 1;
+    min-width: 220px;
+    background-color: #c779d7;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.card-jogo h3 {
+    color: #F5F7FF;
+}
+
+.icone-jogo {
+    font-size: 40px;
+}
+
+.categoria {
+    color: #ca21fd;
+}
+
+.card-jogo a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.passos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.passo {
+    flex: 1;
+}
+
+.numero {
+    font-size: 30px;
+    color: #fffcff;
+}
+
+.comunidade {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content:center;
+}
+
+.comunidade-texto {
+    flex: 1;
+    align-items: center;
+    justify-content:center;
+}
+
+.comunidade-info {
+    flex: 1;
+    align-items: center;
+    justify-content:center;
+}
+
+.comunidade {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.comunidade-info {
+    display: flex;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+   
+}
+
+.links-rodape {
+    display: flex;
+    gap: 20px;
+}
+
+.links-rodape a {
+    text-decoration: none;
+     color: rgb(255, 66, 173);
+}
+
+.logo {
+    text-decoration: none;
+}
