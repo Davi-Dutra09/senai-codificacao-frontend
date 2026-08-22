@@ -1,0 +1,115 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 196, 225);
+    color: rgb(255, 0, 136);
+}
+
+.layout {
+    display: grid;
+
+    grid-template-areas:
+        "cabecalho"
+        "principal"
+        "rodape";
+
+    gap: 20px;
+    min-height: 100vh;
+}
+
+.area-header {
+    grid-area: cabecalho;
+    background-color: #ff75a3;
+    padding: 30px;
+    display: grid;
+    grid-template-columns:auto 1fr;
+}
+
+.menu {
+    display:flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #9e004f;
+}
+
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-servico {
+    background-color: #ffd6e7;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.icone {
+    fill: #9e004f;
+    transition: 0.3s;
+}
+
+.card-servico:hover .icone {
+    fill: #e91e63;
+    transform: scale(1.2);
+}
+
+.grade-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.item-portfolio {
+    aspect-ratio: 1 / 1;
+    background-color: #ffd6e7;
+    border-radius: 15px;
+}
+
+.grade-passos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.secao-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.sobre-info {
+    display: grid;
+    gap: 15px;
+}
+
+.area-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.rodape-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+.card-servico {
+    transition: 0.3s;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+}
